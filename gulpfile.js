@@ -16,6 +16,7 @@ var config = {
                 'app.js',
                 'app.html!text',
                 'index.html!text',
+                // 'bootstrap/css/bootstrap.css!text',
 
                 // Next, we need to bundle all project dependencies. It is a good
                 // idea to explicitly all required Aurelia libraries.
@@ -49,6 +50,7 @@ var config = {
 
             // Lastly, since we are bundling for production, we want to minify as well.
             options: {
+                inject: true,
                 minify: true
             }
         }
